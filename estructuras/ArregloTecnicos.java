@@ -30,6 +30,8 @@ public class ArregloTecnicos {
         cantidad++;
     }
 
+
+    /*-----------llamada a la funcion de busqueda por id usando busqueda lineal-------------*/
     public Tecnico buscarPorId(int idTecnico) {
         int posicion = buscarPosicionPorId(idTecnico);
         return posicion == -1 ? null : tecnicos[posicion];
@@ -52,6 +54,7 @@ public class ArregloTecnicos {
         tecnico.setTelefono(telefono);
         tecnico.setActivo(activo);
     }
+    /* ------------- Metodo de busqueda lineal para eliminacion -------------*/
 
     public Tecnico eliminar(int idTecnico) {
         int posicion = buscarPosicionPorId(idTecnico);
@@ -88,6 +91,7 @@ public class ArregloTecnicos {
         return cantidad == 0;
     }
 
+    /* ------------- Metodo de busqueda lineal-------------*/
     private int buscarPosicionPorId(int idTecnico) {
         for (int i = 0; i < cantidad; i++) {
             if (tecnicos[i].getIdTecnico() == idTecnico) {
