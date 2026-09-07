@@ -75,6 +75,8 @@ public class Main {
         }
     }
 
+    /*--------Método de busqueda lineal--------------*/
+
     private void buscarTecnico() {
         int id = leerEntero("ID del técnico: ");
         Tecnico tecnico = tecnicos.buscarPorId(id);
