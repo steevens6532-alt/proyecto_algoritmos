@@ -9,7 +9,6 @@ public class Tecnico {
     private String telefono;
     private boolean activo;
 
-/*------------Metodo constructor tecnico-------------------------*/
     public Tecnico(int idTecnico, String nombre, String especialidad, String telefono, boolean activo) {
         if (idTecnico <= 0) {
             throw new IllegalArgumentException("El identificador debe ser positivo.");

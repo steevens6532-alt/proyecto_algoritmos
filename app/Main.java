@@ -27,9 +27,10 @@ public class Main {
 
     // MÉTODO AGREGADO PARA INYECTAR LOS TÉCNICOS DE PRUEBA
     private void cargarDatosDePrueba() {
-        tecnicos.registrar(new Tecnico(1, "Carlos Mendoza", "Redes y Telecomunicaciones", "987654321", true));
-        tecnicos.registrar(new Tecnico(2, "María Fernández", "Soporte Técnico y Hardware", "912345678", true));
-        tecnicos.registrar(new Tecnico(3, "Jorge Gómez", "Mantenimiento de Servidores", "955443322", false));
+        // ID, Nombre, Especialidad, Teléfono, Activo, Distancia (km), Calificación (1 a 5)
+        tecnicos.registrar(new Tecnico(1, "Carlos Mendoza", "Redes y Telecomunicaciones", "987654321", true, 2.5, 4.8));
+        tecnicos.registrar(new Tecnico(2, "María Fernández", "Soporte Técnico y Hardware", "912345678", true, 5.0, 4.9));
+        tecnicos.registrar(new Tecnico(3, "Jorge Gómez", "Mantenimiento de Servidores", "955443322", false, 1.2, 4.2));
     }
 
     private void mostrarMenu() {
