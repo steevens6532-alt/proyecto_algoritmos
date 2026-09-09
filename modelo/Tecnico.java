@@ -8,8 +8,10 @@ public class Tecnico {
     private String especialidad;
     private String telefono;
     private boolean activo;
+    private double distanciaKm;
+    private double calificacion;
 
-    public Tecnico(int idTecnico, String nombre, String especialidad, String telefono, boolean activo) {
+    public Tecnico(int idTecnico, String nombre, String especialidad, String telefono, boolean activo, double distanciaKm, double calificacion) {
         if (idTecnico <= 0) {
             throw new IllegalArgumentException("El identificador debe ser positivo.");
         }
@@ -18,6 +20,8 @@ public class Tecnico {
         setEspecialidad(especialidad);
         setTelefono(telefono);
         this.activo = activo;
+        this.distanciaKm = distanciaKm;
+        this.calificacion = calificacion;
     }
 
     public int getIdTecnico() {

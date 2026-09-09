@@ -67,7 +67,7 @@ public class Main {
         String especialidad = leerTexto("Especialidad: ");
         String telefono = leerTexto("Teléfono: ");
 
-        tecnicos.registrar(new Tecnico(id, nombre, especialidad, telefono, true));
+        tecnicos.registrar(new Tecnico(id, nombre, especialidad, telefono, true, 0.0, 0.0));
         System.out.println("Técnico registrado correctamente.");
     }
 
